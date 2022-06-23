@@ -1,3 +1,15 @@
+/* colors */
+
+:root{
+
+    --color-white : #ffffff;
+    --color-btn: #bd21b0;
+    --color-light-gray: rgb(160, 160, 160);
+
+}
+    
+
+
 * {
     padding: 0;
     margin: 0;
@@ -10,7 +22,7 @@
 body {
     width: 100%;
     min-height: 100vh;
-    background-color: rgb(243, 243, 243);
+    background: linear-gradient(163.3deg, #A8C1ED 11.54%, #F3C1EB 90.45%);
     margin: 0;
     padding: 0;
     display: flex;
@@ -53,7 +65,8 @@ body {
     background-color: #ffffff;
     width: 100%;
     padding: 1.3rem 0;
-    border: 1px solid lightgray;
+    /* border: 1px solid lightgray; */
+    border-radius: 0.5rem;
 }
 
 .group:nth-child(1) {
@@ -64,27 +77,65 @@ body {
     height: 3rem;
 }
 
-.profile-photo {
+.input{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    width: 350px;
+    height: 80px;
+    justify-content: space-between;
     align-items: center;
-    border-radius: 50%;
-    overflow: hidden;
 }
 
-.profile-photo img {
-    height: 6rem;
+.input input {
+    width: 250px;
+    padding: 0.50rem;
+}
+
+.btn{
+    background-color: var(--color-btn);
+    color: var(--color-white);
+    padding: 0.50rem;
+    border: none;
+    border-radius: 0.25rem;
+    width: 250px;
+}
+
+
+.separator p {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+}
+.separator p::before{
+    content: "";
+    width: 7.5rem;
+    background-color: var(--color-btn);
+    height: 0.08rem;
+    margin-right: 1rem;
+
+}
+
+.separator p::after{
+    content: "";
+    width: 7.5rem;
+    background-color: var(--color-btn);
+    height: 0.08rem;
+    margin-left: 1rem;
+
 }
 
 .instagram-login {
-    background-color: #0095f6;
+    background-color: var(--color-btn);
     color: #ffffff;
     padding: 8px;
     border-radius: 4px;
+  
 }
 
 .instagram-logout {
-    color: #0095f6;
+    color: var(--color-btn);
     margin-top: 1rem;
 }
 
@@ -93,7 +144,7 @@ body {
 }
 
 .link-blue {
-    color: #0095f6;
+    color: var(--color-btn);
 }
 
 .get-the-app {

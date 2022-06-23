@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Instagram</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
     <div class="instagram-wrapper">
@@ -14,18 +16,26 @@
         <div class="instagram-continue">
             <div class="group">
                 <img src="./img/instagram-logo.png" class="instagram-logo" alt="instagram logo">
-                <div class="profile-photo">
-                    <img src="./img/perfil-instagram.jpg" alt="foto de perfil">
+                <div class="input">
+                    <input type="text" id="option-1-login" placeholder="Telefone,nome de usuário ou email">
+                    <input type="text" id="option-2-login" placeholder="Senha">
                 </div>
-                <a href="#" class="instagram-login">Continue como sprucegabriela</a>
-                <a href="#" class="instagram-logout">Remover conta</a>
+                <button class="btn">Entrar</button>
+
+                <div class="separator"><p>ou</p></div>
+                <div class="login__facebook">
+                    <a href="#"><i class="fa-brands fa-facebook-square"></i>Entrar com o Facebook</a>
+                    <a href="#">Esqueceu sua senha?</a>
+
+                </div>
+
+
+               
             </div>
             <div class="group">
-                <p class="not-account">Não é sprucegabriela?</p>
+                <p class="not-account">Não tem uma conta?</p>
                 <p class="not-account">
-                    <span class="link-blue">Alternar contas</span>
-                    ou
-                    <span class="link-blue">Inscreva-se</span>
+                    <a href="#"><span class="link-blue">Inscreva-se</span></a>
                 </p>
             </div>
             <div class="get-the-app">
